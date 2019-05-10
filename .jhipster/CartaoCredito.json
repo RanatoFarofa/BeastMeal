@@ -1,0 +1,28 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "bandeira",
+            "fieldType": "Bandeira",
+            "fieldValues": "MASTER,VISA,ELO,AMERICAN,DINERS"
+        },
+        {
+            "fieldName": "numero",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cvv",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20190510023130",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "cartao_credito",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}
