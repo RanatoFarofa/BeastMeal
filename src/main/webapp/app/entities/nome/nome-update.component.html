@@ -1,0 +1,49 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-nome-heading" jhiTranslate="bestMealApp.nome.home.createOrEditLabel">Create or edit a Nome</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!nome.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="nome.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="bestMealApp.nome.primeiroNome" for="field_primeiroNome">Primeiro Nome</label>
+                    <input type="text" class="form-control" name="primeiroNome" id="field_primeiroNome"
+                        [(ngModel)]="nome.primeiroNome" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="bestMealApp.nome.nomeMeio" for="field_nomeMeio">Nome Meio</label>
+                    <input type="text" class="form-control" name="nomeMeio" id="field_nomeMeio"
+                        [(ngModel)]="nome.nomeMeio" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="bestMealApp.nome.sobrenome" for="field_sobrenome">Sobrenome</label>
+                    <input type="text" class="form-control" name="sobrenome" id="field_sobrenome"
+                        [(ngModel)]="nome.sobrenome" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="bestMealApp.nome.saudacao" for="field_saudacao">Saudacao</label>
+                    <input type="text" class="form-control" name="saudacao" id="field_saudacao"
+                        [(ngModel)]="nome.saudacao" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="bestMealApp.nome.titulo" for="field_titulo">Titulo</label>
+                    <input type="text" class="form-control" name="titulo" id="field_titulo"
+                        [(ngModel)]="nome.titulo" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
