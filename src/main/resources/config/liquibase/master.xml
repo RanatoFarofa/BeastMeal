@@ -10,6 +10,7 @@
     <include file="config/liquibase/changelog/20190510204358_added_entity_Menu.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20190512010739_added_entity_Produto.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20190512012221_added_entity_Logradouro.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190512013432_added_entity_Municipio.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>
